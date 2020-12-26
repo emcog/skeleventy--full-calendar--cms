@@ -2,12 +2,6 @@ let mix = require('laravel-mix')
 let tailwindcss = require('tailwindcss')
 require('laravel-mix-purgecss')
 
-// full calendar
-require('@fullcalendar/core')
-require('@fullcalendar/daygrid')
-require('@fullcalendar/google-calendar')
-
-
 
 // Paths
 const paths = {
