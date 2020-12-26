@@ -35,6 +35,7 @@
 
     {# canonical #}
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
 </head>
 
 <body {% if body_class %} id="{{ body_class }}"{% endif %} class="text-purple-900 leading-normal text-lg">
@@ -45,6 +46,9 @@
 
         {# include header #}
         {% include "components/header.njk" %}
+        
+        {# include calendar #}
+        {% include 'components/calendar.njk' %}
 
         {# include content #}
         {{ content | safe }}
@@ -53,6 +57,7 @@
         {% include "components/footer.njk" %}
 
     </div>
+
 
     {# include mobile nav #}
     {% include "components/mobile-nav.njk" %}

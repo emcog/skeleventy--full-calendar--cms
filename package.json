@@ -22,5 +22,12 @@
     "sass-loader": "^8.0.0",
     "tailwindcss": "^1.2.0",
     "vue-template-compiler": "^2.6.10"
+  },
+  "dependencies": {
+    "@fullcalendar/core": "^5.5.0",
+    "@fullcalendar/daygrid": "^5.5.0",
+    "@fullcalendar/google-calendar": "^5.5.0",
+    "install": "^0.13.0",
+    "npm": "^6.14.10"
   }
 }

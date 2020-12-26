@@ -15,6 +15,10 @@
         {
             "label": "Contact",
             "url": "/contact/"
+        },
+        {
+            "label": "Calendar",
+            "url": "/calendar/"
         }
     ]
 }
