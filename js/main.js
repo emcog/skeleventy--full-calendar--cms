@@ -13059,6 +13059,9 @@ __webpack_require__.r(__webpack_exports__);
 document.addEventListener('DOMContentLoaded', function () {
   var calendarEl = document.getElementById('calendar');
   var calendar = new _fullcalendar_core__WEBPACK_IMPORTED_MODULE_0__["Calendar"](calendarEl, {
+    // prevent scroll bars appearing on calendar – size can be set dynamically after initialissation using  calendar.setOption('contentHeight', 650);
+    height: 'auto',
+    // load appropriate plugins
     plugins: [_fullcalendar_daygrid__WEBPACK_IMPORTED_MODULE_2__["default"], _fullcalendar_google_calendar__WEBPACK_IMPORTED_MODULE_1__["default"]]
   });
   calendar.render();
