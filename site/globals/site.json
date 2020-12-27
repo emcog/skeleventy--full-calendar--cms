@@ -10,6 +10,7 @@
     "images": {
         "logo": "/images/logo/logo.svg",
         "favicon": "/images/favicon.ico",
+        "favicon-mime": "x-type",
         "twitter": "/images/meta/twitter.jpg",
         "og": "/images/meta/og.jpg"
     },

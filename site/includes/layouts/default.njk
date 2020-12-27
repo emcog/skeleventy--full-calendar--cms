@@ -31,7 +31,7 @@
     {% include "components/social-meta.njk" %}
 
     {# include static assets e.g. favicon, fonts etc #}
-    <link rel="icon" type="image/png" href="{{ site.images.favicon }}">
+    <link rel="icon" type="image/{{ site.images.favicon-mime }}" href="{{ site.images.favicon }}">
 
     {# canonical #}
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
