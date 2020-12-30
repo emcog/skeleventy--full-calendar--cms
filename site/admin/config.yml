@@ -39,12 +39,12 @@ collections:
       - { label: "Featured image", name: "featured_image", widget: "image" }
       - { label: "Excerpt", name: "excerpt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - widget: select
+      - widget: string
         label: "tags"
         name: "tags"
         multiple: true
         create: true
-        options: ["Tags", "created", "from", "config.yml"]
+        # options: ["Tags", "created", "from", "config.yml"]
   - label: "Settings"
     name: "settings"
     editor:
@@ -68,12 +68,12 @@ collections:
         fields:
           - { label: Name, name: name, widget: string }
           - { label: domain, name: url, widget: string }
-      #     author:
-      #       fields:
-      #     - { label: Name,   name: name,   widget: string }
-      #     - { label: Email,  name: email,  widget: string }
-      #     - { label: Handle, name: handle, widget: string }
-      #     - { label: Avatar, name: avata,  widget: url }
+          author:
+            fields:
+          - { label: Name,   name: name,   widget: string }
+          - { label: Email,  name: email,  widget: string }
+          - { label: Handle, name: handle, widget: string }
+          - { label: Avatar, name: avata,  widget: url }
       #     social_links:
       #       fields:
       #     - { label: Facebook, name: facebook, widget: string }
