@@ -85,7 +85,7 @@ mix
                     'visually-hidden',
                     'menu-visible',
                     // TODO check this wildcard works
-                    'js-*'
+                    'js_*'
                 ]
             })
 

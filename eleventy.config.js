@@ -1,10 +1,14 @@
 const htmlmin = require("html-minifier")
+const yaml = require("js-yaml");
 
 module.exports = eleventyConfig => {
-
+    
     // Add a readable date formatter filter to Nunjucks
     eleventyConfig.addFilter("dateDisplay", require("./filters/dates.js"))
-
+    
+    // Enable yaml, necessary for for Netlify CMS
+    eleventyConfig.addDataExtension("yaml", contents => yaml.safeLoad(contents));
+    
     // Add a HTML timestamp formatter filter to Nunjucks
     eleventyConfig.addFilter("htmlDateDisplay", require("./filters/timestamp.js"))
 
