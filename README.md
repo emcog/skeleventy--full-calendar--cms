@@ -62,3 +62,15 @@ Once you've had a tinker with Skeleventy and made something Awwwards worthy, jum
 You can set up continuous deployment which will watch your repo and deploy when you've pushed new changes to it - Netlify will take care of all the heavy lifting for you.
 
 Behold the true magic of a modern JAMstack workflow! :)
+
+
+# Netlify CMS
+
+## Configure
+– site/admin
+
+## Netlify settings
+- Remeber to [setup](https://app.netlify.com/sites/skeleventy-plus/settings/identity#services)
+
+# Netlify forms
+##

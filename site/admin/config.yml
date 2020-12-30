@@ -7,7 +7,7 @@ backend:
   # repo: owner-name/repo-name # Path to your Bitbucket repository
   ### Enable below lines for login with github
   # name: github
-  # repo: emcog/skeleventy-plus
+  repo: emcog/skeleventy-plus
 
 
 
@@ -16,7 +16,7 @@ public_folder: "./dist/images"
 
 
 
-# Please run "npx netlify-cms-proxy-server" for local backend
+### Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true
 
 
@@ -39,29 +39,29 @@ collections:
       - { label: "Featured image", name: "featured_image", widget: "image" }
       - { label: "Excerpt", name: "excerpt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-  #     - widget: select
-  #       label: "tags"
-  #       name: "tags"
-  #       multiple: true
-  #       create: true
-  #       options: ["Tags", "created", "from", "config.yml"]
-  # - label: "Settings"
-  #   name: "settings"
-  #   editor:
-  #     preview: false
-  #   files:
-  #     - label: "Navigation"
-  #       name: "items"
-  #       file: "./site/globas/navigation.json"
-  #       fields:
-  #         - label: Nav Items
-  #           name: main
-  #           widget: list
-  #           allow_add: false
-  #           collapsed: false
-  #           fields:
-  #             - { label: Title, name: label, widget: string }
-  #             - { label: URL, name: url, widget: string }
+      - widget: select
+        label: "tags"
+        name: "tags"
+        multiple: true
+        create: true
+        options: ["Tags", "created", "from", "config.yml"]
+  - label: "Settings"
+    name: "settings"
+    editor:
+      preview: false
+    files:
+      - label: "Navigation"
+        name: "items"
+        file: "./site/globas/navigation.json"
+        fields:
+          - label: Nav Items
+            name: main
+            widget: list
+            allow_add: false
+            collapsed: false
+            fields:
+              - { label: Title, name: label, widget: string }
+              - { label: URL, name: url, widget: string }
       # - label: "Global meta settings"
       #   name: "settings"
       #   file: "site/globals/site.json"
