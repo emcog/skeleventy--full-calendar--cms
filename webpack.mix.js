@@ -41,6 +41,11 @@ mix
         postCss: [tailwindcss('tailwind.config.js')]
     })
 
+
+    // Copy Netlify CMS from src to dist
+    .copy('./site/admin/config.yml', './dist/admin/config.yml')
+
+
     // Production only
     if ( mix.inProduction() )
     {
@@ -78,7 +83,9 @@ mix
                     'required',
                     'row',
                     'visually-hidden',
-                    'menu-visible'
+                    'menu-visible',
+                    // TODO check this wildcard works
+                    'js-*'
                 ]
             })
 
