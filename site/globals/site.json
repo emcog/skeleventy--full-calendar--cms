@@ -20,8 +20,8 @@
         "linkedin": "https://www.linkedin.com"
     },
     "address": {
-        "street": "123 Fake Street",
-        "street_2": "Fake Road",
+        "number": "123 Fake Street",
+        "street": "Fake Road",
         "city": "London",
         "postcode": "LN1 234",
         "country": "GB"

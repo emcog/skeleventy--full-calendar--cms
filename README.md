@@ -6,7 +6,7 @@ A fork of the awesome [Skeleventy](https://skeleventy.netlify.com/). Pre packed 
 
 ## Skeleventy
 
-A skeleton boilerplate built with Eleventy and TailwindCSS.
+A skeleton boilerplate built with Eleventy and TailwindCSS.gaa
 
 ## Features
 
@@ -18,6 +18,10 @@ A skeleton boilerplate built with Eleventy and TailwindCSS.
 - SEO friendly pages (including Open Graph and Twitter meta)
 - Image lazyloading
 - A simple blog with categories and featured images
+### Skeleventy plus includes
+– Netlify CMS
+– [Full calendar](https://fullcalendar.io/)
+– [Netlify forms](https://docs.netlify.com/forms/setup/)
 
 ## Requirements
 

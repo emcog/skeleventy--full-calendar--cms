@@ -1,42 +1,43 @@
 backend:
-  ## Settings when using github or gitlab, bitbucket requires diff settings
+  ### Below lines for github or gitlab
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
-  ## Setting when using bitbucket (refer to docs https://www.netlifycms.org/docs/bitbucket-backend/)
+  ### Enable below lines when using bitbucket (refer to docs https://www.netlifycms.org/docs/bitbucket-backend/)
   # name: bitbucket
   # repo: owner-name/repo-name # Path to your Bitbucket repository
-
-## Allow drafts to be saved
-publish_mode: editorial_workflow
-
-# TODO
-media_folder: "src/static/img"
-public_folder: "/static/img"
-
-backend:
-  # Use netlify identity as backend
-  name: git-gateway
-  branch: master
-  ### enable below lines for github integration ###
+  ### Enable below lines for github integration
   # name: github
   # repo: surjithctly/neat-starter
 
 
+
+media_folder: "./images"
+public_folder: "./dist/images"
+
+
+
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true
-# publish_mode: editorial_workflow
+
+
+
+### Allow drafts to be saved
+publish_mode: editorial_workflow
+
+
+
 collections:
   - label: "Blog"
     name: "blog"
-    folder: "src/posts"
+    folder: "blog/posts"
     create: true
     editor:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Publish date", name: "date", widget: "datetime" }
+      - { label: "Featured image", name: "featured_image", widget: "image" }
+      - { label: "Excerpt", name: "excerpt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
       - widget: select
         label: "tags"
@@ -51,32 +52,42 @@ collections:
     files:
       - label: "Navigation"
         name: "items"
-        file: "src/_data/navigation.yaml"
+        file: "./site/globas/navigation.json"
         fields:
           - label: Nav Items
-            name: items
+            name: main
             widget: list
             allow_add: false
             collapsed: false
             fields:
-              - { label: Title, name: text, widget: string }
+              - { label: Title, name: label, widget: string }
               - { label: URL, name: url, widget: string }
-      - label: "Quick Links"
-        name: "links"
-        file: "src/_data/quicklinks.yaml"
-        fields:
-          - label: Nav Items
-            name: links
-            widget: list
-            collapsed: false
-            fields:
-              - { label: Title, name: title, widget: string }
-              - { label: URL, name: url, widget: string }
-              - { label: Description, name: desc, widget: string }
-      - label: "Meta Settings"
+      - label: "Global meta settings"
         name: "settings"
-        file: "src/_data/settings.yaml"
+        file: "site/globals/site.json"
         fields:
           - { label: Name, name: name, widget: string }
-          - { label: Author, name: author, widget: string }
-          - { label: URL, name: url, widget: string }
+          - { label: domain, name: url, widget: string }
+          author:
+            fields:
+          - { label: Name,   name: name,   widget: string }
+          - { label: Email,  name: email,  widget: string }
+          - { label: Handle, name: handle, widget: string }
+          - { label: Avatar, name: avata,  widget: url }
+          social_links:
+            fields:
+          - { label: Facebook, name: facebook, widget: string }
+          - { label: Twitter,  name: twitter, widget: string }
+          - { label: Linkedin, name: linkedin, widget: string }
+          address:
+            fields:
+          - { label: Number/Name, name: number, widget: string }
+          - { label: Street,      name: street, widget: string }
+          - { label: City,        name: city, widget: string }
+          - { label: Postcode,    name: postcode, widget: string }
+          - { label: Country,    name: country, widget: string }
+          contact:
+            fields:
+          - { label: Phone,   name: phone,   widget: string }
+          - { label: Mobile,  name: mobile,  widget: string }
+          - { label: Email,   name: email,   widget: string }
