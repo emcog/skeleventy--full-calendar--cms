@@ -1,13 +1,13 @@
 backend:
   ### Below lines for github or gitlab
-  # name: git-gateway
-  # branch: master # Branch to update (optional; defaults to master)
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
   ### Enable below lines when using bitbucket (refer to docs https://www.netlifycms.org/docs/bitbucket-backend/)
   # name: bitbucket
   # repo: owner-name/repo-name # Path to your Bitbucket repository
-  ### Enable below lines for github integration
-  name: github
-  repo: emcog/skeleventy-plus
+  ### Enable below lines for login with github
+  # name: github
+  # repo: emcog/skeleventy-plus
 
 
 
