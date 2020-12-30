@@ -1,8 +1,12 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f4455669-0ce8-40ea-8ff5-5c31f0aadfa5/deploy-status)](https://app.netlify.com/sites/skeleventy/deploys)
+<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/f4455669-0ce8-40ea-8ff5-5c31f0aadfa5/deploy-status)](https://app.netlify.com/sites/skeleventy/deploys) -->
 
-# Skeleventy
+# Skeleventy-plus
+A fork of the awesome [Skeleventy](https://skeleventy.netlify.com/). Pre packed with Netlify CMS and forms, and full-calendar.
 
-A skeleton boilerplate built with Eleventy and TailwindCSS. Check out [Skeleventy](https://skeleventy.netlify.com/)!
+
+## Skeleventy
+
+A skeleton boilerplate built with Eleventy and TailwindCSS.
 
 ## Features
 
